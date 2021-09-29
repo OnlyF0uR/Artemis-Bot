@@ -1,0 +1,230 @@
+{
+  "name": "French",
+  "country": "France",
+  "authors": [
+    "Ayzrix#0001"
+  ],
+  "blacklist": {
+    "helpDescription": "Veuillez utiliser cette commande comme indiqué ci-dessous.",
+    "helpFields": [
+      {
+        "title": "Ajouter",
+        "description": "%prefix%blacklist add <User> <Suggestion/Report/All>"
+      },
+      {
+        "title": "Supprimer",
+        "description": "%prefix%blacklist remove <User> <Suggestion/Report/All>"
+      },
+      {
+        "title": "Dégager",
+        "description": "%prefix%blacklist clear <Suggestion/Report/All>"
+      }
+    ],
+    "alreadyOnBlacklist": "Cet utilisateur est déjà dans la liste noire.",
+    "notOnBlacklist": "Cet utilisateur n'est pas dans la liste noire.",
+    "invalidMember": "Cet utilisateur n'existe pas ou n'est pas sur le serveur.",
+    "invalidBlacklist": "Vous pouvez seulement choisir Suggestion, Report ou All.",
+    "blacklistUpdated": "La liste noire a été mise à jour avec succès.",
+    "blacklistsUpdated": "Toutes les listes noires ont été mises à jour avec succès."
+  },
+  "config": {
+    "helpDescription": "Veuillez utiliser cette commande comme indiqué ci-dessous.",
+    "helpFields": [
+      {
+        "title": "Général",
+        "description": "%prefix%config prefix <NewPrefix>\n%prefix%config language <Newlanguage>\n%prefix%config staffrole <@role>"
+      },
+      {
+        "title": "Salons",
+        "description": "%prefix%config suggestionchannel <#channel>\n%prefix%config reportchannel <#channel>\n%prefix%config logchannel <#channel>"
+      },
+      {
+        "title": "Emojis",
+        "description": "%prefix%config approveemoji <NewEmoji>\n%prefix%config rejectemoji <NewEmoji>"
+      },
+      {
+        "title": "Autre",
+        "description": "%prefix%config autoapprove <On/Off>\n%prefix%config autoreject <On/Off>\n%prefix%config deleteapproved <On/Off>\n%prefix%config deleterejected <On/Off>"
+      }
+    ],
+    "prefixUpdated": "Le préfixe a été modifié avec succès en `%new_prefix%`.",
+    "invalidLanguage": "Cette langue n'est pas prise en charge. Vous pouvez trouver une liste avec les langues prises en charge [ici](%language_list_link%).",
+    "languageUpdated": "Langue modifiée avec succès en `%new_language_name% (%new_language_country%)`.",
+    "invalidRole": "Je ne trouve pas ce rôle.",
+    "roleUpdated": "Role modifié avec succès en `%role_name%`.",
+    "invalidChannel": "Je ne trouve pas ce salon.",
+    "suggestionChannelUpdated": "Salon suggestion modifié avec succès en %new_channel%.",
+    "reportChannelUpdated": "Salon report modifié avec succès en %new_channel%.",
+    "logChannelUpdated": "Salon log modifié avec succès en %new_channel%.",
+    "approveEmojiUpdated": "L'emoji d'approbation a été modifié avec succès en %new_emoji%.",
+    "rejectEmojiUpdated": "L'emoji de rejet a été modifié avec succès en %new_emoji%.",
+    "invalidNumberOption": "Vous ne pouvez entrer que -1 (pour désactiver) et plus (pour activer).",
+    "autoApproveUpdated": "Les suggestions ouvertes seront désormais approuvées après `%new_amount%` votes humain.",
+    "autoRejectUpdated": "Open suggestions will now be rejected after `%new_amount%` human downvote reactions.",
+    "invalidToggleOption": "Vous ne pouvez choisir qu'entre `On` et `Off`.",
+    "deleteApprovedUpdated": "La suppression automatique des suggestions approuvées est maintenant `%new_value%`.",
+    "deleteRejectedUpdated": "La suppression automatique des suggestions rejetées est désormais `%new_value%`."
+  },
+  "movereport": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%movereport <ID/ID du message> <#salon>",
+    "invalidReport": "Je ne peux pas déplacer ce report car il n'existe pas.",
+    "invalidChannel": "Je ne peux pas déplacer le report car je n'ai pas trouvé ce salon.",
+    "invalidMessage": "Je ne peux pas déplacer ce report car je n'ai pas pu trouver le message d'origine.",
+    "locationUpdated": "Le report a été déplacé avec succès vers %new_channel%."
+  },
+  "report": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%report <Description>",
+    "onBlacklist": "Vous avez été mis sur liste noire par les administrateurs de ce serveur, vous ne pouvez donc pas créer de report.",
+    "invalidChannel": "Veuillez vous assurer que le propriétaire du serveur a correctement configuré le salon de report.",
+    "reportDescription": "**Description:** %description%\n\n**Status:** %statut%\n**ID:** %id%",
+    "reportSent": "Votre report sur %guild_name% a été créé avec succès."
+  },
+  "resolve": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%resolve <ID/ID du message> [Raison]",
+    "invalidReport": "Je ne peux pas résoudre ce report car il n'existe pas.",
+    "statusUpdated": "L'état de ce report a bien été mis à jour."
+  },
+  "approve": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%approve <ID/ID du message> [Raison]",
+    "invalidSuggestion": "Je ne peux pas approuver cette suggestion car elle n'existe pas.",
+    "statusUpdated": "L'état de cette suggestion a bien été mis à jour."
+  },
+  "consider": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%consider <ID/ID du message> [Raison]",
+    "invalidSuggestion": "Je ne peux pas considérer cette suggestion car elle n'existe pas.",
+    "statusUpdated": "L'état de cette suggestion a bien été mis à jour."
+  },
+  "reopen": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%reopen <ID/ID du message>",
+    "invalidSuggestion": "Je ne peux pas approuver cette suggestion car elle n'existe pas.",
+    "alreadyOpen": "Cette suggestion est déjà ouverte.",
+    "statusUpdated": "L'état de cette suggestion a bien été mis à jour."
+  },
+  "list": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%list [Suggestions/Reports]",
+    "noSuggestionsFound": "Il y a `0` suggestions ouvertes.",
+    "noReportsFound": "Il y a `0` reports ouverts.",
+    "suggestionListDescription": "Il y a `%amount%` suggestions ouvertes. J'affiche les 8 derniers.",
+    "reportListDescription": "Il y a `%amount%` reports ouverts. J'affiche les 8 derniers."
+  },
+  "movesuggestion": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%movesuggestion <ID/ID du message> <#channel>",
+    "invalidSuggestion": "Je ne peux pas déplacer cette suggestion car elle n'existe pas.",
+    "invalidChannel": "Je ne peux pas déplacer la suggestion car je n'ai pas trouvé ce salon.",
+    "invalidMessage": "Je ne peux pas déplacer cette suggestion car je n'ai pas pu trouver le message d'origine.",
+    "locationUpdated": "La suggestion a été déplacée avec succès vers %new_channel%."
+  },
+  "reject": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%reject <ID/ID du message> [Raison]",
+    "invalidSuggestion": "Je ne peux pas rejeter cette suggestion car elle n'existe pas",
+    "statusUpdated": "L'état de cette suggestion a bien été mis à jour."
+  },
+  "suggest": {
+    "helpDescription": "**Veuillez utiliser:** %prefix%suggest <Description>",
+    "onBlacklist": "Vous avez été blacklisté par les administrateurs de ce serveur, vous ne pouvez donc pas créer de suggestions.",
+    "invalidChannel": "Veuillez vous assurer que le propriétaire du serveur a configuré correctement le salon de suggestion.",
+    "suggestionDescription": "**Description:** %description%\n\n**Statut:** %status%\n**ID:** %id%",
+    "suggestionSent": "Votre suggestion sur %guild_name% a été créée avec succès, vous pouvez la trouver [ici](%message_url%)."
+  },
+  "donate": {
+    "description": "Ne vous sentez pas obligé de faire un don ! Ce n'est pas une exigence mais cela nous aide à maintenir nos projets, y compris les suggestions.\n\nSi vous avez décidé de faire un don, contactez `jerskisnow#8214` si vous souhaitez recevoir un grade premium, basé sur le montant que vous avez donné, sur le serveur discord officiel de CodedSnow ! Lorsque vous avez reçu un grade premium, vous recevrez des avantages supplémentaires et vous serez remercié avec gratitude !\n\nVous pouvez trouver plus d'informations, y compris les détails de paiement [ici](%donate_link%)."
+  },
+  "help": {
+    "title": "Commandes",
+    "description": "Utilisez %prefix%help <Commande> pour une explication détaillée.",
+    "fields": {
+        "user": {
+            "title": "Utilisateur",
+            "descriptions": {
+                "suggest": "Créer une suggestion pour ce serveur.",
+                "report": "Créer un report lié à ce serveur.",
+                "list": "Obtenir la liste de toutes les suggestions ouvertes.",
+                "donate": "Obtenir des informations sur les dons.",
+                "invite": "Obtenez le lien d'invitation du bot.",
+                "vote": "Obtenez le lien de vote du bot.",
+                "allowdm": "Mettez à jour vos préférences concernant les messages privés.",
+                "help": "Affiche ce message d'aide."
+            }
+        },
+        "staff": {
+            "title": "Staff",
+            "descriptions": {
+                "approve": "Approuver une suggestion faite par la communauté pour votre serveur.",
+                "reject": "Rejeter une suggestion faite par la communauté pour votre serveur.",
+                "consider": "Considérez une suggestion faite par la communauté pour votre serveur.",
+                "reopen": "Rouvrir une suggestion faite par la communauté pour votre serveur.",
+                "resolve": "Résoudre un report pour votre serveur.",
+                "list": "Obtenir une liste de toutes les suggestions ou reports ouverts.",
+                "movesuggestion": "Déplacer un message de suggestion vers un autre salon.",
+                "movereport": "Déplacer un message de report vers un autre salon."
+            }
+        },
+        "admin": {
+            "title": "Admin",
+            "descriptions": {
+                "config": "Modifier la configuration de votre serveur.",
+                "blacklist": "Empêcher quelqu'un de créer des suggestions et/ou des reports."
+            }
+        }
+    }
+  },
+  "invite": {
+    "description": "Si vous cherchez à inviter suggestions sur votre propre serveur, [Cliquez ici](%bot_invite%). \nSi vous recherchez le serveur de support ou si vous souhaitez passer du temps avec d'autres utilisateurs, [Cliquez ici](%server_invite%)."
+  },
+  "vote": {
+    "description": "Voter pour suggestions pour le faire apparaître plus haut dans la liste discordbot, vous pouvez voter [ici](%vote_link%)."
+  },
+  "allowdm": {
+      "invalidToggleOption": "Vous ne pouvez choisir qu'entre `On` et `Off`.",
+      "allowDMUpdated": "Préférence AllowDM mise à jour. Les messages privés sont maintenant `%new_value%`"
+  },
+  "logs": {
+    "blacklistLogs": {
+      "addedToSuggestion": "%admin_tag% a ajouté %user_tag% à la liste noire des suggestions.",
+      "removedFromSuggestion": "%admin_tag% a supprimé %user_tag% de la liste noire des suggestions.",
+      "addedToReport": "%admin_tag% a ajouté %user_tag% de la liste noire des reports.",
+      "removedFromReport": "%admin_tag% a supprimé %user_tag% de la liste noire des reports.",
+      "addedToAll": "%admin_tag% a ajouté %user_tag% de toutes les listes noire.",
+      "removedFromAll": "%admin_tag% a supprimé %user_tag% de toutes les listes noire.",
+      "clearedSuggestion": "%admin_tag% a effacé tous les utilisateurs de la liste noire des suggestions.",
+      "clearedReport": "%admin_tag% a effacé tous les utilisateurs de la liste noire des reports.",
+      "clearedAll": "%admin_tag% a effacé tous les utilisateurs de toutes les listes noires.",
+      "isOnSuggestion": "%user_tag% a essayé de créer une suggestion mais est sur liste noire.",
+      "isOnReport": "%user_tag% a essayé de créer un report mais est sur liste noire."
+    },
+    "prefixUpdated": "`%user_tag%` a changé le préfixe en `%new_prefix%`.",
+    "languageUpdated": "`%user_tag%` a changé la langue en `%new_language_name%`.",
+    "roleUpdated": "`%user_tag%` a changé le role staff en `%new_role%`.",
+    "suggestionChannelUpdated": "`%user_tag%` a changé le salon suggestion en %new_channel%.",
+    "reportChannelUpdated": "`%user_tag%` a changé le salon reports en %new_channel%.",
+    "logChannelUpdated": "`%user_tag%` a changé le salon log en %new_channel%.",
+    "approveEmojiUpdated": "`%user_tag%` a changé l'emoji d'approbation en %new_emoji%.",
+    "rejectEmojiUpdated": "`%user_tag%` a changé l'emoji de rejet en %new_emoji%.",
+    "autoApproveUpdated": "`%user_tag%` a changé le montant de l'approbation automatique en %new_amount%.",
+    "autoRejectUpdated": "`%user_tag%` a changé le montant de rejet automatique en %new_amount%.",
+    "deleteApprovedUpdated": "`%user_tag%` a modifié la suppression approuvée pour %new_value%.",
+    "deleteRejectedUpdated": "`%user_tag%` a modifié la suppression rejetée en %new_value%.",
+    "reportCreated": "`%user_tag%` a créé un nouveau report, vous pouvez le trouver [ici](%message_url%).",
+    "reportResolved": "`%user_tag%` a changé le statut du report `%report_id%` en résolu.",
+    "reportMoved": "`%user_tag%` a déplacé le report `%report_id%` dans le salon %new_channel%.",
+    "suggestionApproved": "`%user_tag%` a changé le statut de la suggestion `%suggestion_id%` en résolu.",
+    "suggestionUnderConsideration": "`%user_tag%` a changé le statut de la suggestion `%suggestion_id%` en cours d'examen.",
+    "suggestionRejected": "`%user_tag%` a changé le statut de la suggestion `%suggestion_id%` en rejeté.",
+    "suggestionReopened": "`%user_tag%` changed the status of suggestion `%suggestion_id%` en ouvert.",
+    "suggestionCreated": "`%user_tag%` a créé une nouvelle suggestion, vous pouvez la trouver [ici](%message_url%).",
+    "suggestionMoved": "`%user_tag%` a déplacé la suggestion `%suggestion_id%` dans le salon %new_channel%.",
+    "autoApproved": "Le statut de la suggestion `%suggestion_id%` a été automatiquement approuvé.",
+    "autoRejected": "Le statut de la suggestion `%suggestion_id%` a été automatiquement rejeté."
+  },
+  "additional": {
+    "invalidStaffRole": "Veuillez vous assurer que le propriétaire du serveur a correctement configuré le rôle du staff.",
+    "roleRequired": "Vous devez avoir le rôle `%role_name%` pour utiliser cette commande.",
+    "permRequired": "Vous devez avoir la permission `%perm_name% afin d'utiliser cette commande.`",
+    "openStatus": "Ouvert",
+    "considerstatus": "En cours d'examen",
+    "approvedStatus": "Approuvée",
+    "rejectedStatus": "Rejetée",
+    "resolvedStatus": "Résolue",
+    "underConstruction": "Cette fonctionnalité est en construction et ne peut pas encore être utilisée."
+  }
+}
